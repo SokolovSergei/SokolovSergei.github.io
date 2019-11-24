@@ -1,0 +1,36 @@
+.divKnopka {
+    height: 49px;
+    padding-top: 1px;
+}
+
+.knopka {
+    width: 48px;
+    height: 48px;
+}
+
+.knopkaEc {
+    width: 100px;
+    height: 48px;
+}
+
+.knopkaZero {
+    width: 100px;
+    height: 48px;
+}
+
+body {
+    background: linear-gradient(to right, #e91e63, #3f51b5);
+}
+
+.textview {
+    width: 204px;
+    height: 30px;
+    font-size: 25;
+    border: none;
+    color: #607d8b;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}

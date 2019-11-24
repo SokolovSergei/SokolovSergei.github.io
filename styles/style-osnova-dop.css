@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    height: 100%;
+    background: url(../img/background.jpg);
+    background-size: cover; /* Фон занимает всю доступную площадь */
+    background-repeat: no-repeat;
+   } 
+
+.music {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 0px 0px 40px;
+}
+
+audio {
+    width: 400px;
+    height: 40px;
+}
+
+p {
+    color: white;
+    margin-left: 50px;
+}
+
+.block {
+    width: 100%;
+}
+
+.blockMusic {
+    width: 400px;
+    border: 1px dashed white;
+    padding: 10px 7px;
+}
+
+@media only screen and (max-width: 800px), only screen and (max-device-width: 800px) {
+    body {
+        margin: 0;
+        height: 100%;
+        background: url(../img/background.jpg);
+        background-size: cover; /* Фон занимает всю доступную площадь */
+        background-repeat: repeat-y;
+       }
+    
+    .music {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+    
+    audio {
+        width: 300px;
+        height: 40px;
+    }
+    
+    .blockMusic {
+        width: 300px;
+    }
+
+    p {
+        color: white;
+        margin-left: 1px;
+        margin-right: 1px;
+        font-size: 10px;
+    }
+}

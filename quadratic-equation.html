@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="styles/style-quadr.css">
+	<link rel="stylesheet" type="text/css"
+		media="only screen and (max-width: 800px), only screen and (max-device-width: 800px)"
+		href="styles/style-small-device.css" />
+	<title>Калькулятор квадратных уравнений</title>
+</head>
+
+<body>
+	<div>
+		<div class="header">
+			<div class="sl"><a href="index.html">Главная</a></div>
+			<div class="sl"><a href="#">Калькулятор квадратных уравнений</a></div>
+			<div class="sl"><a href="bubbleSort.html">Сортировка методом пузырька</a></div>
+			<div class="sl"><a href="oneMenu.html">Первач</a></div>
+		</div>
+		<input type="text" id="A" placeholder="Коэффициент А*" />
+		<input type="text" id="B" placeholder="Коэффициент B*" />
+		<input type="text" id="C" placeholder="Коэффициент C*" />
+		<!--<select name="town" id="s1">
+		<option value="72">72</option>
+		<option value="150">150</option>
+		<option value="92">92</option>
+		</select>  -->
+		<div><img src="img/Button_f3.gif" alt="Кнопка с ссылкой на сервер" width="92" height="52" border="0"
+				onmousedown="src='img/Button_f2.gif'" onmouseover="src='img/Button.gif'"
+				onmouseout="src='img/Button_f3.gif'" onmouseup="src='img/Button_f3.gif'" onclick="LoadServ()"></div>
+		<div id="tx" class="add"></div>
+	</div>
+	<script src="script/script-quadr.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+@media only screen and (max-width: 800px), only screen and (max-device-width: 800px) {
+    a {
+        background-color: rgba(230, 230, 230, 0.678);
+        border: 1px;
+        border-radius: 15px;
+        padding: 4px 8px;
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+    }
+
+    .header {
+        display: inline;
+        padding: 10px 0px 0px 0px;
+        border: none;
+    }
+
+    .sl+.sl {
+        margin-left: 0px;
+    }
+
+    .sl {
+        margin-bottom: 10px;
+        padding-left: 10px;
+    }
+}
