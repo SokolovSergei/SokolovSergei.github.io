@@ -8,6 +8,7 @@
         })
     })
 })*/
+
 document.getElementById('myPlayer1').volume = 0.3;
 document.getElementById('myPlayer2').volume = 0.3;
 document.getElementById('myPlayer3').volume = 0.3;
