@@ -28,7 +28,7 @@ function loadSong() {
     nextSongTitle.innerHTML = "<b>Next Song: </b>" + audio[currentSong + 1 % audio.length];
     song.playbackRate = 1;
     song.volume = volumeSlider.value;
-    if(song.played){
+    if(song.src != "audio/Jakarta - One Desire.mp3"){
        song.play();
     }
     setTimeout(showDuration, 1000);
