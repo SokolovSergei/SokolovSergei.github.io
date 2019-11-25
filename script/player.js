@@ -26,10 +26,16 @@ function loadSong() {
     song.src = "audio/" + audio[currentSong];
     songTitle.textContent = (currentSong + 1) + ". " + audio[currentSong];
     nextSongTitle.innerHTML = "<b>Next Song: </b>" + audio[currentSong + 1 % audio.length];
-    song.playbackRate = 1;
     song.volume = volumeSlider.value;
-    if(song.src != "audio/Jakarta - One Desire.mp3"){
-       song.play();
+    if(currentSong != 0){
+       song.play();  
+    }
+    var img = document.getElementById('myImg');
+    if(song.played){
+        img.src = "img/pause.png";
+    }
+    if(song.paused){
+        img.src = "img/play.png";
     }
     setTimeout(showDuration, 1000);
 }
