@@ -85,19 +85,23 @@
                 <img src="img/audio-player-logo.png" class="audio-player-logo" />
             </div>
             <div class="player">
-                <div id="songTitle" class="song-title">My Song title will goes here My Song title will goes here My Song title will goes here My Song title will goes here</div>
+                <div id="songTitle" class="song-title">My Song title will goes here</div>
                 <input id="songSlider" class="song-slider" type="range" min="0" step="1" onchange="seekSong()" />
                 <div>
                     <div id="currentTime" class="current-time">00:00</div>
                     <div id="duration" class="duration">00:00</div>
                 </div>
                 <div class="controllers">
-                    <img src="img/previous.png" width="30px" onclick="previous()" />
-                    <img src="img/play.png" id="myImg" width="40px" onclick="playOrPauseSong()" />
-                    <img src="img/next.png" width="30px" onclick="next()" />
-                    <img src="img/volume-down.png" width="15px" />
-                    <input id="volumeSlider" class="volume-slider" type="range" min="0" max="1" step="0.01" onchange="adjustVolume()" />
-                    <img src="img/volume-up.png" width="15px" style="margin-left: 2px;" />
+                    <div class="controllers-button">
+                        <img src="img/previous.png" width="30px" class="player-button" onmousedown="src='img/previous1.png'" onmouseup="src='img/previous.png'" onmouseover="src='img/previous2.png'" onmouseout="src='img/previous.png'" onclick="previous()" />
+                        <img src="img/play.png" id="myImg" width="40px" class="player-button" onclick="playOrPauseSong()" />
+                        <img src="img/next.png" width="30px" class="player-button" onmousedown="src='img/next1.png'" onmouseup="src='img/next.png'" onmouseover="src='img/next2.png'" onmouseout="src='img/next.png'" onclick="next()" />    
+                    </div>
+                    <div class="controllers-volume">
+                        <img src="img/volume-down.png" width="15px" class="player-volume-img" />
+                        <input id="volumeSlider" class="volume-slider" type="range" min="0" max="1" step="0.01" onchange="adjustVolume()" />
+                        <img src="img/volume-up.png" width="15px" style="margin-left: 2px;" /> 
+                    </div>
                 </div>
                 <div id="nextSongTitle" class="song-title"><b>Next Song: </b>Next song title goes here...</div>
             </div>

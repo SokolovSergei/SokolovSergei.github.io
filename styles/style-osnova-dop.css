@@ -46,11 +46,13 @@ p {
     font-family: verdana;
     font-size: 12px;
     display: flex;
+    border-radius: 30px;
 }
 
 .audio-player-logo {
     float: left;
     width: 135px;
+    border-radius: 30px;
 }
 
 .player {
@@ -82,13 +84,20 @@ p {
 
 .controllers {
     clear: both;
-    display: table;
-    padding-left: 33px;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20px;
 }
 
-.controllers * {
-    vertical-align: middle;
-    margin-right: 2px;
+.controllers-button, .controllers-volume {
+    height: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.player-button + .player-button {
+    margin-left: 5px;
 }
 
 .volume-slider {
@@ -154,6 +163,7 @@ p {
         font-family: verdana;
         font-size: 12px;
         display: flex;
+        border-radius: 30px;
     }
     
     .audio-player-logo {
@@ -169,7 +179,7 @@ p {
     
     .song-title {
         width: 95%;
-        padding: 5px 0px;
+        padding: 5px 0px 5px 30px;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
@@ -177,31 +187,14 @@ p {
     
     .song-slider {
         width: 95%;
+        margin-left: 10px;
     }
     
     .current-time {
-        float: left;
-        font-size: 10px;
+        padding-left: 10px;
     }
     
     .duration {
-        float: right;
-        font-size: 10px;
-    }
-    
-    .controllers {
-        clear: both;
-        display: table;
-        padding-left: 33px;
-    }
-    
-    .controllers * {
-        vertical-align: middle;
-        margin-right: 2px;
-    }
-    
-    .volume-slider {
-        width: 90px;
-        margin-left: 5px;
+        padding-right: 10px;
     }
 }
