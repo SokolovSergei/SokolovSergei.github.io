@@ -1,8 +1,14 @@
-var audio = ["Юрий Лоза - Плот.mp3",
+var audio = ["Jakarta - One Desire.mp3",
             "Rammstein - DEUTSCHLAND.mp3",
             "Alex C. feat. Yass feat. Yass - Du Hast Den Schönsten Arsch Der Welt.mp3",
             "Кукрыниксы - Не беда.mp3",
-            "Наталья Варлей - Вертится быстрей Земля.mp3"];
+            "Наталья Варлей - Вертится быстрей Земля.mp3",
+            "Eiffil 65 - Blue.mp3",
+            "Юрий Лоза - Плот.mp3",
+            "Europe - The Final Countdown.mp3",
+            "Imagine Dragons - Believer.mp3",
+            "Skillet - Comatose.mp3",
+            "Шостакович - Вальс №2.mp3",];
 
 var songTitle = document.getElementById('songTitle');
 var songSlider = document.getElementById('songSlider');
@@ -22,7 +28,9 @@ function loadSong() {
     nextSongTitle.innerHTML = "<b>Next Song: </b>" + audio[currentSong + 1 % audio.length];
     song.playbackRate = 1;
     song.volume = volumeSlider.value;
-    song.play();
+    if(song.played){
+       song.play();
+    }
     setTimeout(showDuration, 1000);
 }
 
@@ -64,7 +72,8 @@ function playOrPauseSong() {
 }
 
 function next() {
-    currentSong = currentSong + 1 % audio.length;
+    currentSong++;
+    currentSong = (currentSong > 10) ? audio.length - 11 : currentSong;
     loadSong();
 }
 
@@ -81,12 +90,4 @@ function seekSong() {
 
 function adjustVolume() {
     song.volume = volumeSlider.value;
-}
-
-function increasePlaybackRate() {
-    audio.playbackRate += 0.5;
-}
-
-function decreasePlaybackRate() {
-    audio.playbackRate -= 0.5;
 }

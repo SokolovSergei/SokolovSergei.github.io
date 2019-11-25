@@ -10,11 +10,16 @@ body {
     display: flex;
     flex-wrap: wrap;
     padding: 0px 0px 0px 40px;
+    margin-right: 40px;
+    width: 450px;
+}
+
+.block {
     width: 450px;
 }
 
 audio {
-    width: 400px;
+    width: 435px;
     height: 40px;
 }
 
@@ -24,7 +29,6 @@ p {
 }
 
 .blockMusic {
-    width: 400px;
     border: 1px dashed white;
     padding: 10px 7px;
 }
@@ -41,6 +45,7 @@ p {
     color: #003ba9;
     font-family: verdana;
     font-size: 12px;
+    display: flex;
 }
 
 .audio-player-logo {
@@ -77,6 +82,7 @@ p {
 .controllers {
     clear: both;
     display: table;
+    padding-left: 33px;
 }
 
 .controllers * {
@@ -94,7 +100,7 @@ p {
         margin: 0;
         height: 100%;
         background: url(../img/background.jpg);
-        background-size: cover; /* Фон занимает всю доступную площадь */
+        background-size: 100%; /* Фон занимает всю доступную площадь */
         background-repeat: repeat-y;
        }
     
@@ -102,10 +108,11 @@ p {
         display: flex;
         flex-wrap: wrap;
         padding: 0px;
+        margin: 0px;
+        width: 450px;
     }
-    
-    audio {
-        width: 400px;
-        height: 40px;
+
+    .mainContent {
+        flex-wrap: wrap;
     }
 }
